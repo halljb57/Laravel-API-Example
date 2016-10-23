@@ -21,14 +21,3 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
-
-
-$factory->define(App\Course::class, function (Faker\Generator $faker) {
-
-    return [
-        'author' => $faker->name,
-        'name' => $faker->name,
-        'description' => $faker->text,
-        'price' => $faker->boolean(10, 2),
-    ];
-});
